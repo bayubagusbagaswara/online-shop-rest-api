@@ -1,5 +1,14 @@
 # Pharmacy Store REST API
 
+# generate keypair.pem
+openssl genrsa -out keypair.pem 2048
+
+# generate public.pem
+openssl rsa -in keypair.pem -pubout -out public.pem
+
+# generate private.pem
+openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out private.pem
+
 - JWT Symmetric Key
 
 1. Laporan buat pemilik toko nya, artinya hanya mempedulikan product dan order yang keluar, tidak mempedulikan customer nya siapa

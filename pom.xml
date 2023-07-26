@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bayu</groupId>
-	<artifactId>pharmacy-store-rest-api</artifactId>
+	<artifactId>security-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Pharmacy Store REST API</name>
-	<description>Pharmacy Store REST API</description>
+	<name>Security Test</name>
+	<description>Security Tests</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

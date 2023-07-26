@@ -1,13 +1,13 @@
-package com.bayu.onlineshop;
+package com.bayu.pharmacy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OnlineShopRestApiApplication {
+public class PharmacyRestApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OnlineShopRestApiApplication.class, args);
+		SpringApplication.run(PharmacyRestApiApplication.class, args);
 	}
 
 }

@@ -11,8 +11,19 @@ openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out priv
 
 - JWT Symmetric Key
 
-1. Laporan buat pemilik toko nya, artinya hanya mempedulikan product dan order yang keluar, tidak mempedulikan customer nya siapa
-2. Laporan buat customer, artinya khusus untuk customer tersebut membeli apa saja (spesifik masing-masing customer)
+# Registration
+
+1. User mendaftar dengan memasukkan nama, email dan password
+2. Response nya bisa berupa String, "Registration is successfully" atau "Registration failed, email already taken", atau "Username is already taken"
+3. Lalu jika success, maka kita juga mengirimkan link verifikasi ke email user
+4. Biasanya link url di email tersebut berisi token juga atau URL untuk mengarah ke halaman login
+
+# Login
+
+1. User akan memasukkan username dan password
+2. Lalu dicek apakah berhasil terautentikasi atau gagal
+3. Jika gagal, maka kirim response "Username dan password tidak ditemukan"
+4. Jika success, maka kirimkan token 
 
 # User (Customer)
 

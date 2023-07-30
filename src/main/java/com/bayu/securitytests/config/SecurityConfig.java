@@ -80,6 +80,27 @@ public class SecurityConfig {
         return new NimbusJwtEncoder(jwkSource);
     }
 
+//    @Bean
+//    public ProviderManager authManagerBean(DaoAuthenticationProvider daoAuthenticationProvider) {
+//        return new ProviderManager(daoAuthenticationProvider);
+//    }
+
+    //    @Bean
+//    public AuthenticationManager authenticationManager(){
+//        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+//        authProvider.setUserDetailsService(userDetailService);
+//        authProvider.setPasswordEncoder(getPassWordEncoder());
+//        return new ProviderManager(authProvider);
+//    }
+
+//    @Bean
+//    public DaoAuthenticationProvider daoAuthenticationProvider(){
+//        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+//        authProvider.setUserDetailsService(userService);
+//        authProvider.setPasswordEncoder(passwordEncoder());
+//        return authProvider;
+//    }
+
 
 //    @Value("${jwt.key}")
 //    private String jwtKey;
